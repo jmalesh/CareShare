@@ -17,8 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cjp-kt-lW0" customClass="loginButton">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cjp-kt-lW0">
                                 <rect key="frame" x="226" y="176" width="148" height="242"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="242" id="BS6-50-bu6"/>
                                     <constraint firstAttribute="width" constant="148" id="ohi-iF-iRn"/>
@@ -26,18 +27,178 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.59215686274509804" green="0.92156862745098034" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="cjp-kt-lW0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-3" id="KJt-k4-zm7"/>
                             <constraint firstItem="cjp-kt-lW0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wnh-Yt-KdS"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Vhr-YR-NZu" appends="YES" id="boy-HU-UIx"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="cjp-kt-lW0" id="cej-Ij-tYo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Vhr-YR-NZu">
+                    <connections>
+                        <segue destination="n16-qx-eTB" kind="presentation" identifier="tapGestureSegue" id="3DU-tj-Db6"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="340" y="400"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="gFb-rK-SfK">
+            <objects>
+                <viewController id="n16-qx-eTB" customClass="LoginViewController" customModule="CareShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YvH-r9-Vfe"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Nq-tu-KO8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iH6-4a-nMi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gs2-b1-ylW">
+                                <rect key="frame" x="254" y="143" width="92" height="30"/>
+                                <state key="normal" title="New Member">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="newMemberButtonSelected:" destination="n16-qx-eTB" eventType="touchUpInside" id="CRT-vK-oxg"/>
+                                    <segue destination="ooL-EW-4Yx" kind="presentation" identifier="NewMemberViewController" id="gpO-dY-R6k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4b-hT-nNq">
+                                <rect key="frame" x="236" y="414" width="128" height="30"/>
+                                <state key="normal" title="Returning Member">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qY4-5L-zRs" kind="showDetail" identifier="ReturningMemberViewController" id="ywz-Eg-SAu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gy0-yd-eP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="400"/>
+        </scene>
+        <!--Returning Member View Controller-->
+        <scene sceneID="tVJ-Na-6uj">
+            <objects>
+                <viewController id="qY4-5L-zRs" customClass="ReturningMemberViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6XS-16-kWk"/>
+                        <viewControllerLayoutGuide type="bottom" id="7c2-gf-gOQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WEA-rW-bnM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5S-dJ-O1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1988" y="720"/>
+        </scene>
+        <!--New Member View Controller-->
+        <scene sceneID="bkt-a7-4pU">
+            <objects>
+                <viewController storyboardIdentifier="NewMemberViewController" id="ooL-EW-4Yx" customClass="NewMemberViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D1e-1S-Q3s"/>
+                        <viewControllerLayoutGuide type="bottom" id="mgf-KS-TbT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="NewMemberViewController" id="kUf-ci-hDw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9k-NA-Qzf">
+                                <rect key="frame" x="15" y="543" width="572" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="Z9X-SJ-NnE"/>
+                                    <tabBarItem systemItem="more" id="6On-PW-xxU"/>
+                                </items>
+                            </tabBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="num-Bp-zYo">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Exit" id="uFc-J8-GJC"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Htx-gs-B63">
+                                <rect key="frame" x="60" y="155" width="105" height="30"/>
+                                <state key="normal" title="Medication List">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xAD-3T-cNM" kind="presentation" identifier="MedsListViewContoller" id="m2C-Je-eUW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="num-Bp-zYo" firstAttribute="leading" secondItem="kUf-ci-hDw" secondAttribute="leading" id="0KK-jO-VmF"/>
+                            <constraint firstItem="mgf-KS-TbT" firstAttribute="top" secondItem="i9k-NA-Qzf" secondAttribute="bottom" constant="8" id="1hy-Er-g0m"/>
+                            <constraint firstAttribute="trailing" secondItem="i9k-NA-Qzf" secondAttribute="trailing" constant="13" id="BUK-5N-ExH"/>
+                            <constraint firstItem="i9k-NA-Qzf" firstAttribute="leading" secondItem="kUf-ci-hDw" secondAttribute="leading" constant="15" id="EIe-6b-F39"/>
+                            <constraint firstAttribute="trailing" secondItem="num-Bp-zYo" secondAttribute="trailing" id="H0r-Mu-PuA"/>
+                            <constraint firstItem="num-Bp-zYo" firstAttribute="top" secondItem="D1e-1S-Q3s" secondAttribute="bottom" constant="8" id="H1C-78-z7I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSI-Ci-hob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1988" y="-87"/>
+        </scene>
+        <!--Meds List View Controller-->
+        <scene sceneID="E55-7X-Iyj">
+            <objects>
+                <viewController storyboardIdentifier="MedsListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xAD-3T-cNM" customClass="MedsListViewController" customModule="CareShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4RS-F7-Y39"/>
+                        <viewControllerLayoutGuide type="bottom" id="KJu-O0-0dB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WHw-6Q-ttG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Vx-tg-VYh" customClass="medsTableView">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pMC-38-QbG">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pMC-38-QbG" id="yhK-v2-wEv">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6Vx-tg-VYh" secondAttribute="trailing" constant="20" id="2Rk-FC-Ggq"/>
+                            <constraint firstItem="6Vx-tg-VYh" firstAttribute="leading" secondItem="WHw-6Q-ttG" secondAttribute="leading" constant="20" id="EkM-ub-mHB"/>
+                            <constraint firstItem="6Vx-tg-VYh" firstAttribute="top" secondItem="4RS-F7-Y39" secondAttribute="bottom" id="Kkb-Z7-vVq"/>
+                            <constraint firstItem="KJu-O0-0dB" firstAttribute="top" secondItem="6Vx-tg-VYh" secondAttribute="bottom" id="QK0-30-6xe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="medsTableView" destination="6Vx-tg-VYh" id="Rwd-l3-pjC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBC-zg-jCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2804" y="-87"/>
         </scene>
     </scenes>
     <resources>
