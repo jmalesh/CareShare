@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D99D1F411D25D94300602DD4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D1F401D25D94300602DD4 /* ListViewController.swift */; };
+		D918E1921D2E01740009A14B /* SampleMedication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D918E1911D2E01740009A14B /* SampleMedication.swift */; };
+		D918E1941D2E08520009A14B /* MedicationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D918E1931D2E08520009A14B /* MedicationDetailsViewController.swift */; };
+		D918E1961D2EB61F0009A14B /* FrequencyPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D918E1951D2EB61F0009A14B /* FrequencyPickerViewController.swift */; };
+		D918E1981D2EBFD40009A14B /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D918E1971D2EBFD40009A14B /* ShoppingListViewController.swift */; };
+		D918E19B1D2EC61B0009A14B /* ShoppingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D918E1991D2EC61B0009A14B /* ShoppingModel.xcdatamodeld */; };
+		D96134081D2EF24C00911B19 /* ChoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96134071D2EF24C00911B19 /* ChoreListViewController.swift */; };
 		D99D1F431D2C200700602DD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D1F421D2C200700602DD4 /* LoginViewController.swift */; };
 		D99D1F481D2C234000602DD4 /* NewMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D1F471D2C234000602DD4 /* NewMemberViewController.swift */; };
 		D99D1F4A1D2C23CE00602DD4 /* ReturningMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D1F491D2C23CE00602DD4 /* ReturningMemberViewController.swift */; };
@@ -20,11 +25,16 @@
 		D9C28CBF1D2596970015FD84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C28CBD1D2596970015FD84 /* LaunchScreen.storyboard */; };
 		D9DD80001D2D726D00AECCBE /* MedsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD7FFF1D2D726D00AECCBE /* MedsListViewController.swift */; };
 		D9DD80021D2D7CDC00AECCBE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD80011D2D7CDC00AECCBE /* TableViewCell.swift */; };
-		D9DD80041D2DB26E00AECCBE /* MedsListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD80031D2DB26E00AECCBE /* MedsListDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D99D1F401D25D94300602DD4 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D918E1911D2E01740009A14B /* SampleMedication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleMedication.swift; sourceTree = "<group>"; };
+		D918E1931D2E08520009A14B /* MedicationDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationDetailsViewController.swift; sourceTree = "<group>"; };
+		D918E1951D2EB61F0009A14B /* FrequencyPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyPickerViewController.swift; sourceTree = "<group>"; };
+		D918E1971D2EBFD40009A14B /* ShoppingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		D918E19A1D2EC61B0009A14B /* ShoppingModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingModel.xcdatamodel; sourceTree = "<group>"; };
+		D96134071D2EF24C00911B19 /* ChoreListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoreListViewController.swift; sourceTree = "<group>"; };
+		D96134091D2EFDEA00911B19 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		D99D1F421D2C200700602DD4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D99D1F471D2C234000602DD4 /* NewMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMemberViewController.swift; sourceTree = "<group>"; };
 		D99D1F491D2C23CE00602DD4 /* ReturningMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturningMemberViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +49,6 @@
 		D9C28CC01D2596970015FD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9DD7FFF1D2D726D00AECCBE /* MedsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsListViewController.swift; sourceTree = "<group>"; };
 		D9DD80011D2D7CDC00AECCBE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		D9DD80031D2DB26E00AECCBE /* MedsListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsListDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				D9C28CB81D2596970015FD84 /* Main.storyboard */,
-				D9DD80031D2DB26E00AECCBE /* MedsListDetailViewController.swift */,
 				D9C28CBD1D2596970015FD84 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -66,12 +74,15 @@
 		D99D1F451D2C204B00602DD4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D99D1F401D25D94300602DD4 /* ListViewController.swift */,
+				D918E1971D2EBFD40009A14B /* ShoppingListViewController.swift */,
+				D96134071D2EF24C00911B19 /* ChoreListViewController.swift */,
+				D918E1951D2EB61F0009A14B /* FrequencyPickerViewController.swift */,
 				D99D1F421D2C200700602DD4 /* LoginViewController.swift */,
 				D9DD7FFF1D2D726D00AECCBE /* MedsListViewController.swift */,
 				D99D1F471D2C234000602DD4 /* NewMemberViewController.swift */,
 				D99D1F491D2C23CE00602DD4 /* ReturningMemberViewController.swift */,
 				D9C28CB61D2596970015FD84 /* ViewController.swift */,
+				D918E1931D2E08520009A14B /* MedicationDetailsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -79,6 +90,7 @@
 		D99D1F461D2C207000602DD4 /* App Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				D918E1911D2E01740009A14B /* SampleMedication.swift */,
 				D9C28CB41D2596970015FD84 /* AppDelegate.swift */,
 				D9C28CBB1D2596970015FD84 /* Assets.xcassets */,
 				D9C28CC01D2596970015FD84 /* Info.plist */,
@@ -90,8 +102,9 @@
 		D99D1F4B1D2C325700602DD4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D9DD80011D2D7CDC00AECCBE /* TableViewCell.swift */,
 				D99D1F4C1D2C32AA00602DD4 /* MedListItem.swift */,
+				D9DD80011D2D7CDC00AECCBE /* TableViewCell.swift */,
+				D918E1991D2EC61B0009A14B /* ShoppingModel.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -115,9 +128,9 @@
 		D9C28CB31D2596970015FD84 /* CareShare */ = {
 			isa = PBXGroup;
 			children = (
-				D99D1F4B1D2C325700602DD4 /* Model */,
 				D99D1F461D2C207000602DD4 /* App Delegate */,
 				D99D1F451D2C204B00602DD4 /* Controller */,
+				D99D1F4B1D2C325700602DD4 /* Model */,
 				D99D1F441D2C203B00602DD4 /* View */,
 			);
 			path = CareShare;
@@ -194,16 +207,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9DD80041D2DB26E00AECCBE /* MedsListDetailViewController.swift in Sources */,
 				D99D1F431D2C200700602DD4 /* LoginViewController.swift in Sources */,
+				D918E1941D2E08520009A14B /* MedicationDetailsViewController.swift in Sources */,
 				D9C28CB71D2596970015FD84 /* ViewController.swift in Sources */,
 				D9DD80001D2D726D00AECCBE /* MedsListViewController.swift in Sources */,
 				D99D1F4D1D2C32AA00602DD4 /* MedListItem.swift in Sources */,
 				D99D1F4F1D2C458A00602DD4 /* Identity.swift in Sources */,
 				D9DD80021D2D7CDC00AECCBE /* TableViewCell.swift in Sources */,
 				D9C28CB51D2596970015FD84 /* AppDelegate.swift in Sources */,
+				D918E1921D2E01740009A14B /* SampleMedication.swift in Sources */,
+				D96134081D2EF24C00911B19 /* ChoreListViewController.swift in Sources */,
+				D918E19B1D2EC61B0009A14B /* ShoppingModel.xcdatamodeld in Sources */,
+				D918E1961D2EB61F0009A14B /* FrequencyPickerViewController.swift in Sources */,
+				D918E1981D2EBFD40009A14B /* ShoppingListViewController.swift in Sources */,
 				D99D1F481D2C234000602DD4 /* NewMemberViewController.swift in Sources */,
-				D99D1F411D25D94300602DD4 /* ListViewController.swift in Sources */,
 				D99D1F4A1D2C23CE00602DD4 /* ReturningMemberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +376,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D918E1991D2EC61B0009A14B /* ShoppingModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D96134091D2EFDEA00911B19 /* DataModel.xcdatamodel */,
+				D918E19A1D2EC61B0009A14B /* ShoppingModel.xcdatamodel */,
+			);
+			currentVersion = D96134091D2EFDEA00911B19 /* DataModel.xcdatamodel */;
+			path = ShoppingModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D9C28CA91D2596970015FD84 /* Project object */;
 }
