@@ -21,6 +21,7 @@ class MedsListViewController: UIViewController, Identity, UIViewControllerTransi
     {
         super.viewDidLoad()
         self.setupTableView()
+        medsTableView.registerClass(TableViewCell.self, forCellReuseIdentifier: "cell")
         
         if medListItems.count > 0 {
             return
@@ -40,9 +41,23 @@ class MedsListViewController: UIViewController, Identity, UIViewControllerTransi
         self.medsTableView.delegate = self
         self.medsTableView.dataSource = self
         self.medsTableView.registerClass(TableViewCell.self, forCellReuseIdentifier: "cell")
+        self.medsTableView.backgroundColor = UIColor.blackColor()
+    
         
     }
     
+    func medListItemDeleted(medListItem: MedListItem)
+    {
+        let index = (medListItems as NSArray).indexOfObject(medListItem)
+        if index == NSNotFound { return }
+        
+        medListItems.removeAtIndex(index)
+        
+        medsTableView.beginUpdates()
+        let indexPathForRow = NSIndexPath(forRow: index, inSection: 0)
+        medsTableView.deleteRowsAtIndexPaths([indexPathForRow], withRowAnimation: .Fade)
+        medsTableView.endUpdates()
+    }
     
     override func didReceiveMemoryWarning()
     {
@@ -50,11 +65,17 @@ class MedsListViewController: UIViewController, Identity, UIViewControllerTransi
         
     }
     
+    @IBAction func cancelToNewMemberViewController(segue: UIStoryboardSegue)
+    {
+        
+    }
+   
+    
     
     
 }
 
-extension MedsListViewController: UITableViewDataSource
+extension MedsListViewController: UITableViewDataSource, TableViewCellDelegate
 {
     func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
@@ -68,10 +89,14 @@ extension MedsListViewController: UITableViewDataSource
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = medsTableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = medsTableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TableViewCell
         let item = medListItems[indexPath.row]
         cell.textLabel?.backgroundColor = UIColor.clearColor()
         cell.textLabel?.text = item.text
+        cell.selectionStyle = .None
+        cell.delegate = self
+        cell.medListItem = item
+        
         return cell
     }
     
@@ -92,4 +117,5 @@ extension MedsListViewController: UITableViewDataSource
     {
         cell.backgroundColor = colorForIndex(indexPath.row)
     }
-}
+    
+    }

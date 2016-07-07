@@ -2,7 +2,7 @@
 //  MedListItem.swift
 //  CareShare
 //
-//  Created by Jessica Malesh on 7/5/16.
+//  Created by Jess Malesh on 7/5/16.
 //  Copyright © 2016 Jess Malesh. All rights reserved.
 //
 

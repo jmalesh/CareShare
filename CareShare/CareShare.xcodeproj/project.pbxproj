@@ -20,6 +20,7 @@
 		D9C28CBF1D2596970015FD84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C28CBD1D2596970015FD84 /* LaunchScreen.storyboard */; };
 		D9DD80001D2D726D00AECCBE /* MedsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD7FFF1D2D726D00AECCBE /* MedsListViewController.swift */; };
 		D9DD80021D2D7CDC00AECCBE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD80011D2D7CDC00AECCBE /* TableViewCell.swift */; };
+		D9DD80041D2DB26E00AECCBE /* MedsListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD80031D2DB26E00AECCBE /* MedsListDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D9C28CC01D2596970015FD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9DD7FFF1D2D726D00AECCBE /* MedsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsListViewController.swift; sourceTree = "<group>"; };
 		D9DD80011D2D7CDC00AECCBE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D9DD80031D2DB26E00AECCBE /* MedsListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsListDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				D9C28CB81D2596970015FD84 /* Main.storyboard */,
+				D9DD80031D2DB26E00AECCBE /* MedsListDetailViewController.swift */,
 				D9C28CBD1D2596970015FD84 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DD80041D2DB26E00AECCBE /* MedsListDetailViewController.swift in Sources */,
 				D99D1F431D2C200700602DD4 /* LoginViewController.swift in Sources */,
 				D9C28CB71D2596970015FD84 /* ViewController.swift in Sources */,
 				D9DD80001D2D726D00AECCBE /* MedsListViewController.swift in Sources */,
