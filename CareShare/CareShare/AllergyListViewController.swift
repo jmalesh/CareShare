@@ -46,6 +46,7 @@ class AllergyListViewController: UITableViewController, UIGestureRecognizerDeleg
         super.viewDidLoad()
         title = "Allergy List"
         allergyTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
     }
     
     override func viewWillAppear(animated: Bool)
