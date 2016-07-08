@@ -337,10 +337,10 @@
             </objects>
             <point key="canvasLocation" x="783.5" y="399.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Allergy List View Controller-->
         <scene sceneID="la3-hh-h90">
             <objects>
-                <tableViewController id="8SH-bR-15N" sceneMemberID="viewController">
+                <tableViewController id="8SH-bR-15N" customClass="AllergyListViewController" customModule="CareShare" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qfB-Q8-oBQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,12 +356,21 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="8SH-bR-15N" id="98C-gy-hfn"/>
+                            <outlet property="dataSource" destination="8SH-bR-15N" id="fVx-Eo-jxT"/>
                             <outlet property="delegate" destination="8SH-bR-15N" id="Vzn-O8-hKR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Apk-xD-DmC" userLabel="Allergies"/>
+                    <navigationItem key="navigationItem" id="Apk-xD-DmC" userLabel="Allergies">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xAB-KO-ucK">
+                            <connections>
+                                <action selector="addAllergy:" destination="8SH-bR-15N" id="UUW-so-Rwh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="allergyTableView" destination="qfB-Q8-oBQ" id="pfN-SW-RD4"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zg-4K-MMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

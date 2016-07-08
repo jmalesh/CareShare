@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="Allergies" syncable="YES">
+        <attribute name="allergy" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Chores" syncable="YES">
+        <attribute name="chore" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Shopping" syncable="YES">
+        <attribute name="item" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Shopping" positionX="-27" positionY="18" width="128" height="60"/>
+        <element name="Chores" positionX="18" positionY="72" width="128" height="60"/>
+        <element name="Allergies" positionX="54" positionY="108" width="128" height="60"/>
+    </elements>
+</model>
