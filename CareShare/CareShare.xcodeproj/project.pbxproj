@@ -25,7 +25,6 @@
 		D9C28CBF1D2596970015FD84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C28CBD1D2596970015FD84 /* LaunchScreen.storyboard */; };
 		D9CC68371D2F052F001D4294 /* AllergyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC68361D2F052F001D4294 /* AllergyListViewController.swift */; };
 		D9DD80001D2D726D00AECCBE /* MedsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD7FFF1D2D726D00AECCBE /* MedsListViewController.swift */; };
-		D9DD80021D2D7CDC00AECCBE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD80011D2D7CDC00AECCBE /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +48,6 @@
 		D9C28CC01D2596970015FD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9CC68361D2F052F001D4294 /* AllergyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllergyListViewController.swift; sourceTree = "<group>"; };
 		D9DD7FFF1D2D726D00AECCBE /* MedsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsListViewController.swift; sourceTree = "<group>"; };
-		D9DD80011D2D7CDC00AECCBE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				D99D1F4C1D2C32AA00602DD4 /* MedListItem.swift */,
-				D9DD80011D2D7CDC00AECCBE /* TableViewCell.swift */,
 				D961340A1D2F012900911B19 /* DataModel.xcdatamodeld */,
 			);
 			name = Model;
@@ -217,7 +214,6 @@
 				D9CC68371D2F052F001D4294 /* AllergyListViewController.swift in Sources */,
 				D99D1F4F1D2C458A00602DD4 /* Identity.swift in Sources */,
 				D961340C1D2F012900911B19 /* DataModel.xcdatamodeld in Sources */,
-				D9DD80021D2D7CDC00AECCBE /* TableViewCell.swift in Sources */,
 				D9C28CB51D2596970015FD84 /* AppDelegate.swift in Sources */,
 				D918E1921D2E01740009A14B /* SampleMedication.swift in Sources */,
 				D96134081D2EF24C00911B19 /* ChoreListViewController.swift in Sources */,

@@ -9,10 +9,10 @@
 import UIKit
 import QuartzCore
 
-protocol TableViewCellDelegate
-{
-    func medListItemDeleted(medListItem: MedListItem)
-}
+//protocol TableViewCellDelegate
+//{
+//    func medListItemDeleted(medListItem: MedListItem)
+//}
 
 class TableViewCell: UITableViewCell
 {
