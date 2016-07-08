@@ -9,7 +9,8 @@
 import UIKit
 import CoreData
 
-class AllergyListViewController: UITableViewController
+
+class AllergyListViewController: UITableViewController, UIGestureRecognizerDelegate
 {
     @IBOutlet var allergyTableView: UITableView!
     
@@ -112,6 +113,14 @@ class AllergyListViewController: UITableViewController
         
         return cell!
     }
+
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            allergyList.removeAtIndex(indexPath.row)
+            allergyTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        
+    }
+
     
 
     /*
@@ -158,5 +167,5 @@ class AllergyListViewController: UITableViewController
         // Pass the selected object to the new view controller.
     }
     */
-
+    }
 }

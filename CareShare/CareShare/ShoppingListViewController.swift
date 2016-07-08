@@ -118,7 +118,13 @@ class ShoppingListViewController: UITableViewController
     }
 
     
-    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            list.removeAtIndex(indexPath.row)
+            shoppingTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            
+        }
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -165,4 +171,5 @@ class ShoppingListViewController: UITableViewController
     }
     */
 
+    }
 }
