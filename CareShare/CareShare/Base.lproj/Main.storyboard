@@ -54,10 +54,10 @@
         <scene sceneID="tsU-0W-YNM">
             <objects>
                 <tableViewController id="UKd-cN-2Ka" customClass="MedsListViewController" customModule="CareShare" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="RWf-f8-8BU">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="RWf-f8-8BU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MedicationCell" textLabel="YND-GZ-TpC" detailTextLabel="rzV-h0-eeh" imageView="x5w-9f-bVW" style="IBUITableViewCellStyleSubtitle" id="v8W-nh-dX4">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -110,10 +110,11 @@
         <scene sceneID="wP1-7y-pkH">
             <objects>
                 <tableViewController id="bzd-oi-lfn" customClass="MedicationDetailsViewController" customModule="CareShare" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="3Sz-fI-Naj">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="3Sz-fI-Naj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.59215686270000001" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Medication Name" id="urL-JB-cxn">
                                 <cells>
@@ -131,6 +132,7 @@
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.59215686270000001" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -202,6 +204,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.59215686270000001" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FrequencyCell" textLabel="TX1-Wa-zz5" style="IBUITableViewCellStyleDefault" id="Fwh-26-58R">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -219,6 +222,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.59215686270000001" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="gte-vo-fng" kind="unwind" identifier="SaveSelectedFrequency" unwindAction="unwindWithSelectedFrequency:" id="ZTm-fA-lYP"/>
                                 </connections>
@@ -240,10 +244,10 @@
         <scene sceneID="ujg-j3-UA7">
             <objects>
                 <tableViewController id="g1o-cf-yPp" customClass="ShoppingListViewController" customModule="CareShare" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jPs-oi-DfN">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jPs-oi-DfN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="i5X-ON-797">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -251,7 +255,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i5X-ON-797" id="aSK-os-WMm">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.59215686270000001" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.59215686270000001" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -279,10 +285,10 @@
         <scene sceneID="iru-my-21M">
             <objects>
                 <tableViewController id="wbe-ie-M0N" customClass="ChoreListViewController" customModule="CareShare" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="v74-Dk-Ybc">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="v74-Dk-Ybc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="uBo-5z-M8p">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -341,10 +347,10 @@
         <scene sceneID="la3-hh-h90">
             <objects>
                 <tableViewController id="8SH-bR-15N" customClass="AllergyListViewController" customModule="CareShare" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qfB-Q8-oBQ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qfB-Q8-oBQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="G5A-Ea-vMm">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
