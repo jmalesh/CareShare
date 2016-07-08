@@ -2,7 +2,7 @@
 //  MedListItem.swift
 //  CareShare
 //
-//  Created by Jessica Malesh on 7/5/16.
+//  Created by Jess Malesh on 7/5/16.
 //  Copyright © 2016 Jess Malesh. All rights reserved.
 //
 
@@ -10,15 +10,15 @@ import UIKit
 
 class MedListItem: NSObject
 {
-    var text: String
-    var completed: Bool
+    var title: String?
+    var dosage: String?
+    var frequency: String?
     
-    init(text: String)
+    init(title: String?, dosage: String?, frequency: String?)
     {
-        self.text = text
-        self.completed = false
-        
+        self.title = title
+        self.dosage = dosage
+        self.frequency = frequency
     }
-    
 
 }
